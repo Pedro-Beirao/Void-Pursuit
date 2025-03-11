@@ -4,6 +4,9 @@ public class Movement : MonoBehaviour
 {
     public float speed = 5;
 
+    [Header("Anim")]
+    public Animator engineFxAnimator;
+
     [Header("Boundary")]
     public Vector2 top_left;
     public Vector2 bottom_right;
@@ -19,6 +22,10 @@ public class Movement : MonoBehaviour
         Vector3 horizontal = new Vector3(Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0, 0);
         if (CheckBounds(this.transform.position + horizontal))
             this.transform.position += horizontal;
+
+        engineFxAnimator.SetBool("boosting", Input.GetAxis("Horizontal") > 0.1);
+
+
     }
 
     bool CheckBounds(Vector3 newPos)
