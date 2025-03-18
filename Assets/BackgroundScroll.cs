@@ -13,7 +13,6 @@ public class BackgroundScroll : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(mat.mainTextureOffset);
         mat.mainTextureOffset += direction * Time.deltaTime;
     }
 }

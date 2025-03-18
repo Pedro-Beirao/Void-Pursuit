@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 7673307277596978461}
   m_Layer: 0
   m_Name: PlayerBullet
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -202,4 +202,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e523e175a7744fa8952edfd92fd7ddf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 10, y: 0}
+  speed: 10
+  direction: {x: 1, y: 0, z: 0}
+  seekPlayer: 0
