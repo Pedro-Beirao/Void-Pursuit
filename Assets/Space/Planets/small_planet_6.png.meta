@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 93f4bff2f32cb4fd4b57e9dc79a16566
+guid: a8500738caeac4107b447156efb4c7c6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1161604956373862266
-    second: Main ship weapon - Projectile - Auto cannon bullet_0
-  - first:
-      213: 8287931329708892841
-    second: Main ship weapon - Projectile - Auto cannon bullet_1
-  - first:
-      213: -4800783246844459176
-    second: Main ship weapon - Projectile - Auto cannon bullet_2
-  - first:
-      213: 6880207478361930997
-    second: Main ship weapon - Projectile - Auto cannon bullet_3
+      213: -7637847826554420560
+    second: small_planet_6_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -109,89 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Main ship weapon - Projectile - Auto cannon bullet_0
+      name: small_planet_6_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 1
+        y: 1
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d0778621e619645c5a47d50e4d300a7e
-      internalID: -1476250254
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main ship weapon - Projectile - Auto cannon bullet_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e02914f42f6b047aa801bb32064f6643
-      internalID: -778974330
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main ship weapon - Projectile - Auto cannon bullet_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cbd3b6fdb77f341a3885ee24442bd5aa
-      internalID: 247775916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main ship weapon - Projectile - Auto cannon bullet_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba8bd44b93de94a18aa0a863772d0560
-      internalID: 260205641
+      spriteID: 0b20cb96ed9e00690800000000000000
+      internalID: -7637847826554420560
       vertices: []
       indices: 
       edges: []
@@ -200,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a1f4c80819292448fa0fc5a4dd6711f5
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -209,11 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Main ship weapon - Projectile - Auto cannon bullet_0: -1476250254
-      Main ship weapon - Projectile - Auto cannon bullet_1: -778974330
-      Main ship weapon - Projectile - Auto cannon bullet_2: 247775916
-      Main ship weapon - Projectile - Auto cannon bullet_3: 260205641
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

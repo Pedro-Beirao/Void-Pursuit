@@ -13,8 +13,6 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        Vector3 newPos = this.transform.position;
-
         Vector3 vertical = new Vector3(0, Input.GetAxis("Vertical") * speed * Time.deltaTime, 0);
         if (CheckBounds(this.transform.position + vertical))
             this.transform.position += vertical;
