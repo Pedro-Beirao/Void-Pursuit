@@ -40,6 +40,8 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("PlayerBullet"))
         {
+            Destroy(collision.gameObject);
+
             Die();
         }
     }
@@ -47,6 +49,9 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         deadAnimator.SetBool("dead", true);
+        Destroy(this.transform.Find("Fx").gameObject);
+
         Destroy(gameObject, 1);
+        Destroy(this);
     }
 }
