@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public int damage = 1;
     public float speed = 1;
 
-    [Header("Normal")]
+    [Header("Fixed")]
     public Vector3 direction;
 
     [Header("Seeker")]
@@ -14,8 +15,12 @@ public class Bullet : MonoBehaviour
     {
         if (seekPlayer)
         {
-            Transform seekTransform = GameObject.FindGameObjectWithTag("Player").transform;
-            direction = seekTransform.position - transform.position;
+            GameObject seekedObject = GameObject.FindGameObjectWithTag("Player");
+
+            if (seekedObject)
+                direction = seekedObject.transform.position - transform.position;
+            else
+                direction = Vector3.left;
         }
 
         float angle = Mathf.Atan2(direction.y, direction.x);
@@ -25,5 +30,13 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         transform.position += new Vector3(direction.x, direction.y, 0).normalized * Time.deltaTime * speed;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (this.CompareTag("EnemyBullet") && collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<Health>().TakeDamage(damage);
+        }
     }
 }

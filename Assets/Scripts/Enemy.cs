@@ -44,6 +44,10 @@ public class Enemy : MonoBehaviour
 
             Die();
         }
+        else if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<Health>().TakeDamage(1);
+        }
     }
 
     void Die()
@@ -51,7 +55,7 @@ public class Enemy : MonoBehaviour
         deadAnimator.SetBool("dead", true);
         Destroy(this.transform.Find("Fx").gameObject);
 
-        Destroy(gameObject, 1);
+        Destroy(gameObject, 0.7f);
         Destroy(this);
     }
 }
