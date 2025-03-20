@@ -3,6 +3,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     int health = 4;
+    float shieldTimer = 0;
 
     [Header("Sprites")]
     [SerializeField] SpriteRenderer spriteRenderer;
@@ -10,10 +11,21 @@ public class Health : MonoBehaviour
     [SerializeField] Sprite slightDamaged;
     [SerializeField] Sprite damaged;
     [SerializeField] Sprite veryDamaged;
+    [SerializeField] GameObject shield;
+
+    void Update()
+    {
+        shieldTimer -= Time.deltaTime;
+
+        shield.SetActive(shieldTimer > 0);
+    }
 
     public void TakeDamage(int damage)
     {
+        if (shieldTimer > 0) return;
+
         health -= damage;
+        shieldTimer = 2;
 
         if (health == 4)
             spriteRenderer.sprite = fullHealth;

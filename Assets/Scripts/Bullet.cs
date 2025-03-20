@@ -30,6 +30,7 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         transform.position += new Vector3(direction.x, direction.y, 0).normalized * Time.deltaTime * speed;
+        if (transform.position.x > 9 || transform.position.x < -9) Destroy(gameObject);
     }
 
     void OnTriggerEnter2D(Collider2D collision)

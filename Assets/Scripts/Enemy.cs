@@ -4,6 +4,7 @@ using System.Collections;
 public class Enemy : MonoBehaviour
 {
     public float speed;
+    public int health = 1;
 
     public float fireDelay;
     public int fireQuantity;
@@ -17,6 +18,8 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         transform.position += Vector3.left * speed * Time.deltaTime;
+        if (transform.position.x > 8.5) return;
+        if (transform.position.x < -8) Destroy(gameObject);
 
         fireTimer -= Time.deltaTime;
         if (fireTimer <= 0)
@@ -42,12 +45,20 @@ public class Enemy : MonoBehaviour
         {
             Destroy(collision.gameObject);
 
-            Die();
+            TakeDamage(1);
         }
         else if (collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<Health>().TakeDamage(1);
         }
+    }
+
+    void TakeDamage(int damage)
+    {
+        health -= damage;
+
+        if (health <= 0)
+            Die();
     }
 
     void Die()
