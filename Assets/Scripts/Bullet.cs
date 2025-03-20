@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public int damage = 1;
-    public float speed = 1;
+    [SerializeField] int damage = 1;
+    [SerializeField] float speed = 1;
 
     [Header("Fixed")]
-    public Vector3 direction;
+    [SerializeField] Vector3 direction;
 
     [Header("Seeker")]
-    public bool seekPlayer;
+    [SerializeField] bool seekPlayer;
 
     void Start()
     {

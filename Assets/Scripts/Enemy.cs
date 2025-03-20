@@ -3,15 +3,15 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour
 {
-    public float speed;
-    public int health = 1;
+    [SerializeField] float speed;
+    [SerializeField] int health = 1;
 
-    public float fireDelay;
-    public int fireQuantity;
+    [SerializeField] float fireDelay;
+    [SerializeField] int fireQuantity;
 
-    public GameObject projectile;
+    [SerializeField] GameObject projectile;
 
-    public Animator deadAnimator;
+    [SerializeField] Animator deadAnimator;
 
     float fireTimer = 1;
 
@@ -19,7 +19,7 @@ public class Enemy : MonoBehaviour
     {
         transform.position += Vector3.left * speed * Time.deltaTime;
         if (transform.position.x > 8.5) return;
-        if (transform.position.x < -8) Destroy(gameObject);
+        if (transform.position.x < -9) Destroy(gameObject);
 
         fireTimer -= Time.deltaTime;
         if (fireTimer <= 0)
@@ -68,5 +68,7 @@ public class Enemy : MonoBehaviour
 
         Destroy(gameObject, 0.7f);
         Destroy(this);
+
+        KillCounter.killCount++;
     }
 }

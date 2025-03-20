@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  health: 3
+  health: 2
   fireDelay: 1
   fireQuantity: 2
   projectile: {fileID: 7450773449364980045, guid: 9cadcf1238fc94c7db79ab80816a111d, type: 3}
