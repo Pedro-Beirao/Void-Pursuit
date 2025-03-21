@@ -13,6 +13,8 @@ public class Health : MonoBehaviour
     [SerializeField] Sprite veryDamaged;
     [SerializeField] GameObject shield;
 
+    public GameObject shieldPowerup;
+
     void Update()
     {
         shieldTimer -= Time.deltaTime;
@@ -23,6 +25,12 @@ public class Health : MonoBehaviour
     public void TakeDamage(int damage)
     {
         if (shieldTimer > 0) return;
+        if (shieldPowerup)
+        {
+            Destroy(shieldPowerup);
+            shieldTimer = 2;
+            return;
+        }
 
         health -= damage;
         shieldTimer = 2;
