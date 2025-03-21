@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 4bf352a56ee2f4f03aba26926bac06d3
+guid: 429d372884d28b244b174f2091dc092c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2030580299708145595
-    second: Main ship weapon - Projectile - Rocket_0
-  - first:
-      213: -7594939969888058335
-    second: Main ship weapon - Projectile - Rocket_1
-  - first:
-      213: -6345550270201846964
-    second: Main ship weapon - Projectile - Rocket_2
+      213: -855298285791758126
+    second: 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Main ship weapon - Projectile - Rocket_0
+      name: 1_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 6
-        width: 7
-        height: 17
+        x: 0
+        y: 0
+        width: 736
+        height: 604
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,52 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bbf920c26021e2c10800000000000000
-      internalID: 2030580299708145595
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main ship weapon - Projectile - Rocket_1
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 4
-        width: 7
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 124086c465a599690800000000000000
-      internalID: -7594939969888058335
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main ship weapon - Projectile - Rocket_2
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 3
-        width: 7
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c432c3046a310f7a0800000000000000
-      internalID: -6345550270201846964
+      spriteID: 2d8b16a9dbe5124f0800000000000000
+      internalID: -855298285791758126
       vertices: []
       indices: 
       edges: []
@@ -184,10 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Main ship weapon - Projectile - Rocket_0: 2030580299708145595
-      Main ship weapon - Projectile - Rocket_1: -7594939969888058335
-      Main ship weapon - Projectile - Rocket_2: -6345550270201846964
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
