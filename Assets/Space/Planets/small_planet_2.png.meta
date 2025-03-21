@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      small_planet_2_0: -7509131649016646128
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
