@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - ShieldPowerup
   - Ammo
+  - Transition
   layers:
   - Default
   - TransparentFX
