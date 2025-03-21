@@ -2,14 +2,17 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float speed = 5;
+    [HideInInspector] public float speed = 5;
+    public float normalSpeed = 5;
+    public float boostSpeed = 10;
+
 
     [Header("Anim")]
-    public Animator engineFxAnimator;
+    [SerializeField] Animator engineFxAnimator;
 
     [Header("Boundary")]
-    public Vector2 top_left;
-    public Vector2 bottom_right;
+    [SerializeField] Vector2 top_left;
+    [SerializeField] Vector2 bottom_right;
 
     void Update()
     {

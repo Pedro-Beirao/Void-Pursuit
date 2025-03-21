@@ -61,6 +61,7 @@ public class Health : MonoBehaviour
 
         Destroy(GetComponent<Shooting>());
         Destroy(GetComponent<Movement>());
+        Destroy(GetComponent<PowerupManager>());
         for (int i = 0; i < transform.childCount; i++)
             Destroy(transform.GetChild(i).gameObject);
     }

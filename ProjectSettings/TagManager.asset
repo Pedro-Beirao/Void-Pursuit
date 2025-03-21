@@ -10,6 +10,7 @@ TagManager:
   - ShieldPowerup
   - Ammo
   - Transition
+  - BoostPowerup
   layers:
   - Default
   - TransparentFX
