@@ -11,12 +11,12 @@ public class Shooting : MonoBehaviour
     [Header("Anim")]
     [SerializeField] Animator weaponAnimator;
 
-    int bulletCount = 20;
+    public int ammo = 20;
     float shootTimer = 0, timer1 = Int32.MaxValue, timer2 = Int32.MaxValue;
 
     private void Start()
     {
-        bulletCountText.text = bulletCount.ToString();
+        bulletCountText.text = ammo.ToString();
     }
 
     void Update()
@@ -25,7 +25,7 @@ public class Shooting : MonoBehaviour
         timer1 -= Time.deltaTime;
         timer2 -= Time.deltaTime;
 
-        if (Input.GetButton("Fire1") && bulletCount > 0)
+        if (Input.GetButton("Fire1") && ammo > 0)
         {
             weaponAnimator.SetBool("shooting", true);
 
@@ -42,30 +42,30 @@ public class Shooting : MonoBehaviour
         }
 
         if (shootTimer > 0) HandleShoot();
+
+        bulletCountText.text = ammo.ToString();
     }
 
     void HandleShoot()
     {
-        if (timer1 < 0 && bulletCount > 0)
+        if (timer1 < 0 && ammo > 0)
         {
             timer1 = Int32.MaxValue;
 
             GameObject newBullet = Instantiate(bulletPrefab, barrel1.position, Quaternion.identity);
             Destroy(newBullet, 5);
 
-            bulletCount--;
-            bulletCountText.text = bulletCount.ToString();
+            ammo--;
         }
 
-        if (timer2 < 0 && bulletCount > 0)
+        if (timer2 < 0 && ammo > 0)
         {
             timer2 = Int32.MaxValue;
 
             GameObject newBullet = Instantiate(bulletPrefab, barrel2.position, Quaternion.identity);
             Destroy(newBullet, 5);
 
-            bulletCount--;
-            bulletCountText.text = bulletCount.ToString();
+            ammo--;
         }
     }
 }

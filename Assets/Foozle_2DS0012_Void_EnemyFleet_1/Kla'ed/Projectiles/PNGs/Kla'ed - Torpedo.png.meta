@@ -109,10 +109,10 @@ TextureImporter:
       name: Kla'ed - Torpedo_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 11
-        width: 7
-        height: 21
+        x: 0
+        y: 0
+        width: 11
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,10 +131,10 @@ TextureImporter:
       name: Kla'ed - Torpedo_1
       rect:
         serializedVersion: 2
-        x: 13
-        y: 10
-        width: 7
-        height: 22
+        x: 11
+        y: 0
+        width: 11
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,10 +153,10 @@ TextureImporter:
       name: Kla'ed - Torpedo_2
       rect:
         serializedVersion: 2
-        x: 24
-        y: 12
-        width: 7
-        height: 20
+        x: 22
+        y: 0
+        width: 11
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a735b7052e44e4320923af0799132e0f
     internalID: 0
     vertices: []
     indices: 

@@ -8,6 +8,9 @@ TagManager:
   - PlayerBullet
   - Enemy
   - ShieldPowerup
+  - Ammo
+  - Transition
+  - BoostPowerup
   layers:
   - Default
   - TransparentFX

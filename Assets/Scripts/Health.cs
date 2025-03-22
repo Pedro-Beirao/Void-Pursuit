@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class Health : MonoBehaviour
 {
@@ -19,7 +21,8 @@ public class Health : MonoBehaviour
     {
         shieldTimer -= Time.deltaTime;
 
-        shield.SetActive(shieldTimer > 0);
+        if (shield)
+            shield.SetActive(shieldTimer > 0);
     }
 
     public void TakeDamage(int damage)
@@ -54,7 +57,12 @@ public class Health : MonoBehaviour
         spriteRenderer.gameObject.GetComponent<Animator>().SetBool("dead", true);
         spriteRenderer.transform.SetParent(null);
 
-        Destroy(spriteRenderer.gameObject, 0.5f);
-        Destroy(this.gameObject);
+        StartCoroutine(GameObject.FindGameObjectWithTag("Transition").GetComponent<Transition>().RestartScene());
+
+        Destroy(GetComponent<Shooting>());
+        Destroy(GetComponent<Movement>());
+        Destroy(GetComponent<PowerupManager>());
+        for (int i = 0; i < transform.childCount; i++)
+            Destroy(transform.GetChild(i).gameObject);
     }
 }
