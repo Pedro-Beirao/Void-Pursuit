@@ -63,8 +63,10 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        deadAnimator.SetBool("dead", true);
-        Destroy(this.transform.Find("Fx").gameObject);
+        if (deadAnimator) deadAnimator.SetBool("dead", true);
+
+        Transform Fx = transform.Find("Fx");
+        if (Fx) Destroy(Fx.gameObject);
 
         Destroy(gameObject, 0.7f);
         Destroy(this);
