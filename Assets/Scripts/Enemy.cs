@@ -63,6 +63,8 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        KillCounter.killCount++;
+
         if (deadAnimator) deadAnimator.SetBool("dead", true);
 
         Transform Fx = transform.Find("Fx");
@@ -70,7 +72,5 @@ public class Enemy : MonoBehaviour
 
         Destroy(gameObject, 0.7f);
         Destroy(this);
-
-        KillCounter.killCount++;
     }
 }

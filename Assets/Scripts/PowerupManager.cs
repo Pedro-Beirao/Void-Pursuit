@@ -39,6 +39,7 @@ public class PowerupManager : MonoBehaviour
     {
         if (collider.gameObject.CompareTag("ShieldPowerup"))
         {
+            if (health.shieldPowerup) return;
             health.shieldPowerup = collider.gameObject;
             collider.transform.parent = transform;
             collider.transform.localPosition = Vector3.zero;

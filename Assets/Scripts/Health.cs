@@ -57,7 +57,7 @@ public class Health : MonoBehaviour
         spriteRenderer.gameObject.GetComponent<Animator>().SetBool("dead", true);
         spriteRenderer.transform.SetParent(null);
 
-        StartCoroutine(GameObject.FindGameObjectWithTag("Transition").GetComponent<Transition>().RestartScene());
+        StartCoroutine(GameObject.FindGameObjectWithTag("Transition").GetComponent<Transition>().RestartScene(3));
 
         Destroy(GetComponent<Shooting>());
         Destroy(GetComponent<Movement>());
