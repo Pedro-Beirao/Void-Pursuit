@@ -3,7 +3,7 @@ using UnityEngine;
 public class CameraShake : MonoBehaviour
 {
     Vector3 originalPos;
-    public float shakeAmmount = 1;
+    public float shakeAmmount = 0.05f;
     public float shakeDampening = 0.2f;
 
     void Start()
