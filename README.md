@@ -8,11 +8,15 @@ Made with Unity 6
 
 ### Screenshots
 
-<img src="./Screenshots/Cover.jpg" width="300"/>
-<img src="./Screenshots/gameplay1.jpg" width="300"/>
+<div>
+  <img src="./Screenshots/Cover.jpg" width="400"/>
+  <img src="./Screenshots/gameplay1.jpg" width="400"/>
+</div>
 
-<img src="./Screenshots/gameplay2.jpg" width="300"/>
-<img src="./Screenshots/gameplay3.jpg" width="300"/>
+<div>
+  <img src="./Screenshots/gameplay2.jpg" width="400"/>
+  <img src="./Screenshots/gameplay3.jpg" width="400"/>
+</div>
 
 ### Credits
 - Ship Sprites from https://itch.io/c/2713136/void cc0
