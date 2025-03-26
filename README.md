@@ -6,6 +6,14 @@ Void Pursuit is a 2D spaceship shooting game. You're the pilot of a spaceship th
 
 Made with Unity 6
 
+### Screenshots
+
+<img src="./Screenshots/Cover.jpg" width="300"/>
+<img src="./Screenshots/gameplay1.jpg" width="300"/>
+
+<img src="./Screenshots/gameplay2.jpg" width="300"/>
+<img src="./Screenshots/gameplay3.jpg" width="300"/>
+
 ### Credits
 - Ship Sprites from https://itch.io/c/2713136/void cc0
 - Background Sprites from https://not-jam.itch.io/space-generator cc0
